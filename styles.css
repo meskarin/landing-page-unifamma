@@ -1,0 +1,28 @@
+:root {
+    --bg: #f7f2ea;
+    --bg-deep: #efe6d7;
+    --ink: #1f1d1a;
+    --muted: #6f6b64;
+    --accent: #5b0098;
+    --accent-2: #1f807c;
+    --card: #ffffff;
+    --shadow: 0 24px 60px rgba(31, 29, 26, 0.12);
+    --radius: 22px;
+    --font-title: serif;
+    --font-body: system-ui, Segoe UI, Roboto, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: radial-gradient(circle at top left, #fff7ee 0%, var(--bg) 45%, var(--bg-deep) 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
