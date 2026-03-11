@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Chimira Store</title>
-        <link rel="stylesheet" href="styles.css" />
-      </head>
-    <body>
-        <header class="site-header">
-            <section class="hero">
-                <div class="container hero-grid">
-                  <div class="hero-copy">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chimira Store</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
                     <p class="eyebrow">Sistema Web em Landing Page com API Fake Store</p>
                     <h1>Atividade de Extensão</h1>
                     <p class="lead">
-                      Uma aplicação básica com integração com a API Fake Store para exibir produtos.
+                        Uma aplicação básica com integração com a API Fake Store para exibir produtos.
                     </p>
-                  </div>
-                  <form class="hero-form">
+                </div>
+                <form class="hero-form">
                     <h2>Cadastre-se</h2>
                     <p>Deixe seu nome e email para receber novidades.</p>
                     <label>
-                      Nome
-                      <input type="text" name="nome" placeholder="Seu nome" />
+                        Nome
+                        <input type="text" name="nome" placeholder="Seu nome" />
                     </label>
                     <label>
-                      Email
-                      <input type="email" name="email" placeholder="voce@exemplo.com" />
+                        Email
+                        <input type="email" name="email" placeholder="voce@exemplo.com" />
                     </label>
                     <button type="button" class="btn">Enviar</button>
-                  </form>
+                </form>
+            </div>
+        </section>
+        <section id="produtos" class="section section-products">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2>Produtos</h2>
+                        <p>
+                            Catalogo sincronizado com a Fake Store API. Clique em qualquer
+                            item para conhecer detalhes.
+                        </p>
+                    </div>
+                    <div class="filters">
+                        <button class="filter active" data-category="all">Todos</button>
+                        <button class="filter" data-category="men's clothing">Masculino</button>
+                        <button class="filter" data-category="women's clothing">Feminino</button>
+                        <button class="filter" data-category="jewelery">Joias</button>
+                        <button class="filter" data-category="electronics">Eletronicos</button>
+                    </div>
                 </div>
-              </section>
-          </main>
-    </body>
+
+                <div id="products-grid" class="products-grid" aria-live="polite"></div>
+            </div>
+        </section>
+        </main>
+</body>
+
 </html>
